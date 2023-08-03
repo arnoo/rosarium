@@ -7,6 +7,7 @@
    
 \usepackage{ulem}
 \usepackage{ebgaramond}
+\usepackage{fontawesome5}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
 \usepackage{ifthen}
@@ -33,16 +34,16 @@
 \usepackage{titlesec}
 \usepackage[extramarks]{titleps}
 \newfontfamily\secheadfont{EB Garamond}
-\newcommand{\secheadstyle}{\vspace{-0.4cm}\secheadfont\large\center\textsc}
+\newcommand{\secheadstyle}{\vspace{-0.8cm}\secheadfont\large\center\textsc}
 \titleformat{\section}[block]
   {}
   {}{0pt}
   {\secheadstyle}
 
 \newcommand{\mysterium}[1]{\textbf{#1}}
-\newcommand{\mysteriumnumero}[1]{\textbf{#1~-}}
+\newcommand{\mysteriumnumero}[1]{\textbf{#1~\textendash~}}
 \newcommand{\fructum}[1]{\textbf{#1}}
-\newcommand{\dies}[1]{\vspace{-0.6cm}\begin{center}\textit{\tiny#1}\end{center}\vspace{-0.1cm}}
+\newcommand{\dies}[1]{\vspace{-0.6cm}\begin{center}\textit{\tiny#1}\end{center}\vspace{-0.2cm}}
 
 \graphicspath{{images}} 
 \usepackage[hyperindex]{hyperref}
@@ -51,87 +52,100 @@
 \pagestyle{empty}
 
 \twocolumn[
-  {\secheadstyle\selectfont\textsc{\begin{center}\sout{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}~~~Rosarium Beatae Mariae Virginis~~~\sout{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} \end{center}}}
-  \vspace{-0.3cm}
+   {\secheadstyle\selectfont\textsc{\begin{center}\faCross~~~~\textbf{Rosarium Beatae Mariae Virginis \textendash~Mystéria}~~~~\faCross \end{center}}}
+  \vspace{0.2cm}
 ]
 
 \section{Mystéria Gaudiósa}
 \dies{In Feria secunda et sabbato}
 
-\mysteriumnumero{I} Beatae Mariae Virginis \mysterium{anuntiationem} contemplamur et \fructum{humilitas} petitur.\\
-\hspace*{0pt}\hfill \hspace*{0pt}\hfill \ldots Iesus, quem, virgo, concepisti
+\mysteriumnumero{I} Beatae Mariae Virginis \mysterium{anuntiationem} contemplamur et \fructum{humilitas} pétitur.\\
+\hspace*{0pt}\hfill \hspace*{0pt}\hfill \ldots Iésus, quem, virgo, concepisti
 
-\mysteriumnumero{II} Beatae Mariae Virginis \mysterium{visitationem} contemplamur et \fructum{charitas ad frates} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, quem visitando Elisabeth portasti
+\mysteriumnumero{II} Beatae Mariae Virginis \mysterium{visitationem} contemplamur et \fructum{charitas ad frates} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, quem visitando Elisabeth portasti
 
-\mysteriumnumero{III} Domini Nostri Iesu Christi \mysterium{nativitatem} contemplamur et \fructum{TODO} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, quem, Virgo, genuisti
+\mysteriumnumero{III} Domini Nóstri Iésu Chrísti \mysterium{nativitatem} contemplamur et \fructum{paupertátis spíritus} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, quem, Virgo, genuisti
 
-\mysteriumnumero{IV} Domini Nostri Iesu Christi \mysterium{presentationem in templo} contemplamur et \fructum{obedientia} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, quem in templo praesentasti
+\mysteriumnumero{IV} Domini Nóstri Iésu Chrísti \mysterium{presentationem in templo} contemplamur et \fructum{obedientia} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, quem in templo praesentasti
 
-\mysteriumnumero{V} Domini Nostri Iesu Christi \mysterium{inventionem in templo} contemplamur et \fructum{Deum inquarendi voluntas} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, quem in templo invenisti
-~\\
+\mysteriumnumero{V} Domini Nóstri Iésu Chrísti \mysterium{inventionem in templo} contemplamur et \fructum{Deum inquarendi voluntas} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, quem in templo invenisti
 
 \section{Mystéria Dolorósa}
-\dies{In Feria tertia et sexta}
+\dies{In Feria a et sexta}
 
-\mysteriumnumero{I} Domini Nostri Iesu Christi \mysterium{orationem in horto} contemplamur et \fructum{dolor pro peccatis nostris} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui resurrexit a mortuis
+\mysteriumnumero{I} Domini Nóstri Iésu Chrísti \mysterium{orationem in horto} contemplamur et \fructum{dolor pro peccatis Nóstris} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui resurrexit a mortuis
 
-\mysteriumnumero{II} Domini Nostri Iesu Christi \mysterium{flagellationem} contemplamur et \fructum{corporum nostrorum mortificatio} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui in caelum ascendit
+\mysteriumnumero{II} Domini Nóstri Iésu Chrísti \mysterium{flagellationem} contemplamur et \fructum{corporum nostrorum mortificatio} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui in caelum ascendit
 
-\mysteriumnumero{III} Domini Nostri Iesu Christi \mysterium{spinis coronationem} contemplamur et \fructum{superbiae} mortificatio petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui Spiritum Sanctum misit
+\mysteriumnumero{III} Domini Nóstri Iésu Chrísti \mysterium{spinis coronationem} contemplamur et \fructum{superbiae} mortificatio pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui Spiritum Sanctum misit
 
-\mysteriumnumero{IV} Domini Nostri Iesu Christi \mysterium{crucis balulationem} contemplamur et \fructum{patientia in tribulationibus} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui te assumpsit
+\mysteriumnumero{IV} Domini Nóstri Iésu Chrísti \mysterium{crucis balulationem} contemplamur et \fructum{patientia in tribulationibus} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui te assumpsit
 
-\mysteriumnumero{V} Domini Nostri Iesu Christi \mysterium{crucifixionem et mortem} contemplamur et \fructum{sui ipsus donum ad animarum redemptionem} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui te in caelis coronavit
+\mysteriumnumero{V} Domini Nóstri Iésu Chrísti \mysterium{crucifixionem et mortem} contemplamur et \fructum{sui ipsus donum ad animarum redemptionem} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui te in caelis coronavit
 
 \newpage 
 
 \section{Mystéria Gloriósa}
 \dies{In Dominica et Feria quarta}
 
-\mysteriumnumero{I} Domini Nostri Iesu Christi \mysterium{resurrectionem} contemplamur et \fructum{fides} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui pro nobis sanguinem sudavit
+\mysteriumnumero{I} Domini Nóstri Iésu Chrísti \mysterium{resurrectionem} contemplamur et \fructum{fides} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui pro nobis sanguinem sudavit
 
-\mysteriumnumero{II} Domini Nostri Iesu Christi in caelum \mysterium{ascensionem} contemplamur et \fructum{spes} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui pro nobis flagellatus est
+\mysteriumnumero{II} Domini Nóstri Iésu Chrísti in caelum \mysterium{ascensionem} contemplamur et \fructum{spes} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui pro nobis flagellatus est
 
-\mysteriumnumero{III} \mysterium{Spiritus Sancti descensionem} contemplamur et \fructum{charitas ad Deum} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui pro nobis spinis coronatus est
+\mysteriumnumero{III} \mysterium{Spiritus Sancti descensionem} contemplamur et \fructum{charitas ad Deum} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui pro nobis spinis coronatus est
 
-\mysteriumnumero{IV} Beatae Mariae Virginis in caelum \mysterium{assumptionem} contemplamur et \fructum{bene moriendi gratia} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui pro nobis crucem baiulavit
+\mysteriumnumero{IV} Beatae Mariae Virginis in caelum \mysterium{assumptionem} contemplamur et \fructum{bene moriendi gratia} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui pro nobis crucem baiulavit
 
-\mysteriumnumero{V} \mysterium{Beatae Mariae Virginis coronationem} contemplamur et \fructum{fiducia in Maria Regina Nostra} petitur.\\
-\hspace*{0pt}\hfill \ldots Iesus, qui pro nobis crucifixus est
+\mysteriumnumero{V} \mysterium{Beatae Mariae Virginis coronationem} contemplamur et \fructum{fiducia in Maria Regina Nostra} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, qui pro nobis crucifixus est
 
 \section{Mystéria Luminósa}
 \dies{In Feria quinta}
 
-\hspace*{0pt}\hfill \ldots Iesus, Qui apud Iordanem baptizatus est
-\hspace*{0pt}\hfill \ldots Iesus, Qui ipsum revelavit apud Canense matrimonium
-\hspace*{0pt}\hfill \ldots Iesus, Qui Regnum Dei annuntiavit
-\hspace*{0pt}\hfill \ldots Iesus, Qui transfiguratus est 
-\hspace*{0pt}\hfill \ldots Iesus, Qui Eucharistiam instituit
+\mysteriumnumero{I} Domini Nóstri Iésu Chrísti \mysterium{Baptismum} in Iordane contemplamur et \fructum{remissio omnium peccatorum} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, Qui apud Iordanem baptizatus est
+
+\mysteriumnumero{II} Domini Nóstri Iésu Chrísti primum miraculum ad \mysterium{nuptias in Cana} contemplamur et \fructum{benedictio omnium matrimoniorum} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, Qui ipsum revelavit apud Canense matrimonium
+
+\mysteriumnumero{III} A Domino Nostro Iésu Christo \mysterium{proclamationem Regni Dei} contemplamur et donum \fructum{Salutis Aeternae} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, Qui Regnum Dei annuntiavit
+
+\mysteriumnumero{IV} Domini Nóstri Iésu Chrísti \mysterium{Transfigurationem} in Monte contemplamur et \fructum{fides in Deo Uno et Trino} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, Qui transfiguratus est 
+
+\mysteriumnumero{V} A Domino Nostro Iésu Christo \mysterium{institutionem Sacratissimae Eucharistiae} in Ultima Coena contemplamur et \fructum{unio cordis cum Corde Eucharistico Iésu} pétitur.\\
+\hspace*{0pt}\hfill \ldots Iésus, Qui Eucharistiam instituit
 
 \newpage
+
+\twocolumn[
+   {\secheadstyle\selectfont\textsc{\begin{center}\faCross~~~~\textbf{Rosarium Beatae Mariae Virginis \textendash~Oratones}~~~~\faCross \end{center}}}
+  \vspace{1.2cm}
+]
 \section{Symbolum Apostolorum}
 \begin{scripture}
   \begin{poetry}
     Credo in Deum Patrem omnipotentem,\\
-    Creatorem caeli et terrae. Et in Iesum\\
+    Creatorem caeli et terrae. Et in Iésum\\
     Christum, Filium eius unicum, Dominum\\
     nostrum, qui conceptus est de Spiritu\\
     Sancto, natus ex Maria Virgine, passus sub\\
     Pontio Pilato, crucifixus, mortuus, et\\
-    sepultus, descendit ad inferos, tertia die\\
+    sepultus, descendit ad inferos, a die\\
     resurrexit a mortuis, ascendit ad caelos, sedet\\
     ad dexteram Dei Patris omnipotentis, inde\\
     venturus est iudicare vivos et mortuos.\\
@@ -152,7 +166,7 @@
     terra.\\
     Panem nostrum quotidianum da nobis\\
     hodie, et dimitte nobis debita nostra sicut et\\
-    nos dimittimus debitoribus nostris.\\
+    nos dimittimus debitoribus Nóstris.\\
     Et ne nos inducas in tentationem,\\
     sed libera nos a malo.
     Amen.\\
@@ -164,7 +178,7 @@
   \begin{poetry}
     Ave Maria, gratia plena, Dominus tecum.\\
     Benedicta tu in mulieribus, et benedictus\\
-    fructus ventris tui, Iesus.\\
+    fructus ventris tui, Iésus.\\
     Sancta Maria, Mater Dei, ora pro nobis\\
     peccatoribus, nunc, et in hora mortis\\
     nostrae. Amen.\\
@@ -181,10 +195,11 @@
   \end{poetry}
 \end{scripture}
 
+\vspace{18pt}
 \section{Oratio Fatimae}
 \begin{scripture}
   \begin{poetry}
-    Domine Iesu,\\
+    Domine Iésu,\\
     remitte nobis debita nostra,\\
     libera nos ab igne inferni,\\
     conduc in caelum omnes animas,\\
@@ -202,11 +217,11 @@
     in hac lacrimarum valle.
     Eia ergo, Advocata nostra, \\
     illos tuos misericordes oculos ad nos converte.
-    Et Iesum, benedictum fructum ventris tui, \\
+    Et Iésum, benedictum fructum ventris tui, \\
     nobis post hoc exsilium ostende.\\
     O clemens, o pia, o dulcis Virgo Maria.\\
     Ora pro nobis, Sancta Dei Genetrix.\\
-    Ut digni efficiamur promissionibus Christi.\\
+    Ut digni efficiamur promissionibus Chrísti.\\
     Oremus:\\
     Deus, cuius Unigenitus per vitam mortem et\\
     resurrectionem suam nobis salutis aeterne\\
