@@ -1,0 +1,215 @@
+\documentclass[paper=a5,pagesize=pdftex,fontsize=10pt,headinclude=on,twoside=off]{scrbook}
+\usepackage[head=0cm,foot=0.5cm,top=0.5cm,bottom=0.5cm,left=0.7cm,right=0.7cm]{geometry}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\linespread{0.9}
+   
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{ragged2e}
+\usepackage{needspace}
+\usepackage[utf8x]{inputenc}
+\usepackage[french]{babel}
+\usepackage[defaultlines=4,all]{nowidow} % Avoid widow lines (a line by itself on a page at the end of a chapter)
+\usepackage[protrusion=true,final]{microtype}
+\usepackage{scripture}
+\scripturesetup{
+  poetry/leftmargin=0pt
+}
+   
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fourier-orns}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{EB Garamond}
+
+\newcommand{\negphantom}[1]{\settowidth{\dimen0}{#1}\hspace*{-\dimen0}}
+
+\usepackage{titlesec}
+\usepackage[extramarks]{titleps}
+\newfontfamily\secheadfont{EB Garamond}
+\newcommand{\secheadstyle}{\vspace{-0.4cm}\secheadfont\large\center\textsc}
+\titleformat{\section}[block]
+  {}
+  {}{0pt}
+  {\secheadstyle}
+
+\newcommand{\mysterium}[1]{\textbf{#1}}
+\newcommand{\fructum}[1]{\textbf{#1}}
+\newcommand{\dies}[1]{\vspace{-0.6cm}\begin{center}\textit{\tiny#1}\end{center}\vspace{-0.1cm}}
+
+\graphicspath{{images}} 
+\usepackage[hyperindex]{hyperref}
+\title{Rosarium Beatae Mariae Virginis}
+\begin{document}
+\pagestyle{empty}
+
+\twocolumn[\begin{center}{\textsc\large\secheadfont Rosarium Beatae Mariae Virginis}\end{center}]
+
+\section{Mystéria Gaudiósa}
+\dies{In Feria secunda et sabbato}
+
+\textbf{I)} Beatae Mariae Virginis \mysterium{anuntiationem} contemplamur et \fructum{humilitas} petitur.\\
+\ldots Iesus, quem, virgo, concepisti
+
+\textbf{II)} Beatae Mariae Virginis \mysterium{visitationem} contemplamur et \fructum{charitas ad frates} petitur.\\
+\ldots Iesus, quem visitando Elisabeth portasti
+
+\textbf{III)} Domini Nostri Iesu Christi \mysterium{nativitatem} contemplamur et \fructum{TODO} petitur.\\
+\ldots Iesus, quem, Virgo, genuisti
+
+\textbf{IV)} Domini Nostri Iesu Christi \mysterium{presentationem in templo} contemplamur et \fructum{obedientia} petitur.\\
+\ldots Iesus, quem in templo praesentasti
+
+\textbf{V)} Domini Nostri Iesu Christi \mysterium{inventionem in templo} contemplamur et \fructum{Deum inquarendi voluntas} petitur.\\
+\ldots Iesus, quem in templo invenisti
+
+\section{Mystéria Dolorósa}
+\dies{In Feria tertia et sexta}
+
+\textbf{I)} Domini Nostri Iesu Christi \mysterium{orationem in horto} contemplamur et \fructum{dolor pro peccatis nostris} petitur.\\
+\ldots Iesus, qui resurrexit a mortuis
+
+\textbf{II)} Domini Nostri Iesu Christi \mysterium{flagellationem} contemplamur et \fructum{corporum nostrorum mortificatio} petitur.\\
+\ldots Iesus, qui in caelum ascendit
+
+\textbf{III)} Domini Nostri Iesu Christi \mysterium{spinis coronationem} contemplamur et \fructum{superbiae} mortificatio petitur.\\
+\ldots Iesus, qui Spiritum Sanctum misit
+
+\textbf{IV)} Domini Nostri Iesu Christi \mysterium{crucis balulationem} contemplamur et \fructum{patientia in tribulationibus} petitur.\\
+\ldots Iesus, qui te assumpsit
+
+\textbf{V)} Domini Nostri Iesu Christi \mysterium{crucifixionem et mortem} contemplamur et \fructum{sui ipsus donum ad animarum redemptionem} petitur.\\
+\ldots Iesus, qui te in caelis coronavit
+
+\newpage 
+
+\section{Mystéria Gloriósa}
+\dies{In Dominica et Feria quarta}
+
+\textbf{I)} Domini Nostri Iesu Christi \mysterium{resurrectionem} contemplamur et \fructum{fides} petitur.\\
+\ldots Iesus, qui pro nobis sanguinem sudavit
+
+\textbf{II)} Domini Nostri Iesu Christi in caelum \mysterium{ascensionem} contemplamur et \fructum{spes} petitur.\\
+\ldots Iesus, qui pro nobis flagellatus est
+
+\textbf{III)} \mysterium{Spiritus Sancti descensionem} contemplamur et \fructum{charitas ad Deum} petitur.\\
+\ldots Iesus, qui pro nobis spinis coronatus est
+
+\textbf{IV)} Beatae Mariae Virginis in caelum \mysterium{assumptionem} contemplamur et \fructum{bene moriendi gratia} petitur.\\
+\ldots Iesus, qui pro nobis crucem baiulavit
+
+\textbf{V)} \mysterium{Beatae Mariae Virginis coronationem} contemplamur et \fructum{fiducia in Maria Regina Nostra} petitur.\\
+\ldots Iesus, qui pro nobis crucifixus est
+
+\section{Mystéria Luminósa}
+\dies{In Feria quinta}
+
+\ldots Iesus, Qui apud Iordanem baptizatus est
+\ldots Iesus, Qui ipsum revelavit apud Canense matrimonium
+\ldots Iesus, Qui Regnum Dei annuntiavit
+\ldots Iesus, Qui transfiguratus est 
+\ldots Iesus, Qui Eucharistiam instituit
+
+\newpage
+\section{Symbolum Apostolorum}
+\begin{scripture}
+  \begin{poetry}
+    Credo in Deum Patrem omnipotentem,\\
+    Creatorem caeli et terrae. Et in Iesum\\
+    Christum, Filium eius unicum, Dominum\\
+    nostrum, qui conceptus est de Spiritu\\
+    Sancto, natus ex Maria Virgine, passus sub\\
+    Pontio Pilato, crucifixus, mortuus, et\\
+    sepultus, descendit ad inferos, tertia die\\
+    resurrexit a mortuis, ascendit ad caelos, sedet\\
+    ad dexteram Dei Patris omnipotentis, inde\\
+    venturus est iudicare vivos et mortuos.\\
+    Credo in Spiritum Sanctum, sanctam\\
+    Ecclesiam catholicam, sanctorum\\
+    communionem, remissionem peccatorum,\\
+    carnis resurrectionem, vitam aeternam.\\
+    Amen.\\
+  \end{poetry}
+\end{scripture}
+
+\section{Pater Noster}
+\begin{scripture}
+  \begin{poetry}
+    Pater noster, qui es in caelis,\\
+    sanctificetur nomen tuum. Adveniat regnum\\
+    tuum. Fiat voluntas tua, sicut in caelo et in\\
+    terra.\\
+    Panem nostrum quotidianum da nobis\\
+    hodie, et dimitte nobis debita nostra sicut et\\
+    nos dimittimus debitoribus nostris.\\
+    Et ne nos inducas in tentationem,\\
+    sed libera nos a malo.
+    Amen.\\
+  \end{poetry}
+\end{scripture}
+
+\section{Ave Maria}
+\begin{scripture}
+  \begin{poetry}
+    Ave Maria, gratia plena, Dominus tecum.\\
+    Benedicta tu in mulieribus, et benedictus\\
+    fructus ventris tui, Iesus.\\
+    Sancta Maria, Mater Dei, ora pro nobis\\
+    peccatoribus, nunc, et in hora mortis\\
+    nostrae. Amen.\\
+  \end{poetry}
+\end{scripture}
+
+\section{Gloria Patri}
+\begin{scripture}
+  \begin{poetry}
+    Gloria Patri, et Filio, et Spiritui Sancto.\\
+    Sicut erat in principio, et nunc, et semper, et\\
+    in saecula saeculorum. Amen.
+  \end{poetry}
+\end{scripture}
+
+\section{Oratio Fatimae}
+\begin{scripture}
+  \begin{poetry}
+    Domine Iesu,\\
+    remitte nobis debita nostra,\\
+    libera nos ab igne inferni,\\
+    conduc in caelum omnes animas,\\
+    praesertim illas, quae misericordiae tuae maxime indigent.\\
+  \end{poetry}
+\end{scripture}
+
+\section{Salve Regina}
+\begin{scripture}
+  \begin{poetry}
+    Salve Regina, Mater misericordiae.\\
+    Vita, dulcedo, et spes nostra, salve.\\
+    Ad te clamamus exsules filii Hevae.\\
+    Ad te Suspiramus, gementes et flentes\\
+    in hac lacrimarum valle.
+    Eia ergo, Advocata nostra, \\
+    illos tuos misericordes oculos ad nos converte.
+    Et Iesum, benedictum fructum ventris tui, \\
+    nobis post hoc exsilium ostende.\\
+    O clemens, o pia, o dulcis Virgo Maria.\\
+    Ora pro nobis, Sancta Dei Genetrix.\\
+    Ut digni efficiamur promissionibus Christi.\\
+    Oremus:\\
+    Deus, cuius Unigenitus per vitam mortem et\\
+    resurrectionem suam nobis salutis aeterne\\
+    praemia comparavit, concede, quaesumus: ut\\
+    haec mysteria sanctissimo beatae Mariae\\
+    Virginis Rosario recolentes, et imitemur\\
+    quor continent, et quod promittunt,\\
+    assequamur. Per eumdem Christum\\
+    Dominum. Amen.\\
+  \end{poetry}
+\end{scripture}
+
+\fancyfoot[L]{\tiny arnaud@btmx.fr / https://github.com/arnoo/}
+
+\end{document}
