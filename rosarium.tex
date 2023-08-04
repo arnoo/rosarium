@@ -1,5 +1,5 @@
 \documentclass[paper=a5,pagesize=pdftex,fontsize=10pt,headinclude=on,twoside=off]{scrbook}
-\usepackage[head=0cm,foot=0.5cm,top=0.5cm,bottom=0.5cm,left=0.7cm,right=0.7cm]{geometry}
+\usepackage[head=0cm,foot=0.2cm,top=0.5cm,bottom=0.5cm,left=0.7cm,right=0.7cm]{geometry}
 \setlength{\parskip}{5pt}
 \setlength{\parindent}{0pt}
 \setlength{\columnsep}{0.7cm}
@@ -8,7 +8,6 @@
 \usepackage{ulem}
 \usepackage{ebgaramond}
 \usepackage{fontawesome5}
-\usepackage{fancyhdr}
 \usepackage{xcolor}
 \usepackage{ifthen}
 \usepackage{ragged2e}
@@ -40,6 +39,13 @@
   {}{0pt}
   {\secheadstyle}
 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\fancyfoot[L]{\tiny https://github.com/arnoo/~~\textendash~~arnaud@btmx.fr}
+
 \newcommand{\mysterium}[1]{\textbf{#1}}
 \newcommand{\mysteriumnumero}[1]{\textbf{#1~\textendash~}}
 \newcommand{\fructum}[1]{\textbf{#1}}
@@ -49,7 +55,6 @@
 \usepackage[hyperindex]{hyperref}
 \title{Rosarium Beatae Mariae Virginis}
 \begin{document}
-\pagestyle{empty}
 
 \twocolumn[
    {\secheadstyle\selectfont\textsc{\begin{center}\faCross~~~~\textbf{Rosarium Beatae Mariae Virginis \textendash~Mystéria}~~~~\faCross \end{center}}}
@@ -233,7 +238,5 @@
     Dominum. Amen.\\
   \end{poetry}
 \end{scripture}
-
-\fancyfoot[L]{\tiny arnaud@btmx.fr / https://github.com/arnoo/}
 
 \end{document}
